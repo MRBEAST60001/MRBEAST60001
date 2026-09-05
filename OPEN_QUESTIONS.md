@@ -1,28 +1,32 @@
-# Open questions for the PI
+# Open questions for the PI and team
 
-Only decisions that the proposal leaves genuinely open and that change what gets built or measured. Each was found while auditing the estimands or trying to recover experiment metadata. None has been resolved in `main.tex`; where the manuscript needed a placeholder it says so in the text.
+Only items that genuinely need a decision or information the repository does not contain. Nothing here was resolved silently in `main.tex`.
 
-## A. Data that could not be recovered
+## A. Information to supply (blocks the final numbers, not the science)
 
-1. **Preliminary-study metadata.** The repository contains no logs, so Table 1 has TODO placeholders for exact model deployment strings (including the Grok and DeepSeek versions), N per cell, temperature, horizon, prior-induction method, and all point estimates with intervals. Who owns filling these in, and from which run directories?
-2. **The 0.0146 / 0.0147 cell.** These two numbers are carried over from the proposal text. They need to be confirmed against the logs, with an uncertainty interval, before the document goes out. If the interval is wide, the sentence should be softened further or dropped.
+1. **Run logs for Studies 1–4.** No experiment outputs exist in this repository or environment (see `DATA_RECOVERY.md`). Table 1 is qualitative for that reason. Where are the logs, and who fills in: deployment strings, N per cell, temperature, horizon, prior-induction method, elicited prior strength, acquisition metric, point estimates, intervals?
+2. **The 0.0146 / 0.0147 cell.** The proposal text gives these; they were not verifiable, so the manuscript says "almost exactly the gap predicted by preserving the prior odds". Confirm the numbers and an interval, then the digits can go back in.
+3. **"About 16 hypotheses" and "tens of bits" (Study 2).** Both were in the proposal and are stated qualitatively in the manuscript. Confirm if they should be restored as numbers.
+4. **Exact model identifiers.** Grok and DeepSeek versions and the Gemma 3 12B checkpoint are not recorded anywhere available; the manuscript uses family names only.
+5. **Author list and affiliations.** Omitted from the title block rather than guessed.
+6. **Gate owners and dates.** Omitted from Table 2 rather than shown empty.
 
-## B. Estimand ambiguities the proposal does not settle
+## B. Estimand choices the proposal leaves open
 
-3. **Horizon-aware vs. myopic value in the opposition study.** The manuscript defines "best experiment" with the finite-horizon Q-value under the shared objective (Eq. 4), so that the opposition and stopping studies use one decision problem. The proposal's wording ("rationally best experiment") is also consistent with one-step expected information gain. The two can disagree on which experiment is optimal and therefore on which worlds count as opposition worlds. Which is primary, and is the other reported as a sensitivity?
-4. **Is STOP in the opposition action set?** The manuscript assumes the opposition study forces an experiment (no STOP), matching the proposal's "forced to keep going" framing, and reserves stopping for the second study. If STOP is allowed in opposition worlds, an avoided falsifier can be replaced by stopping rather than by another experiment, and the two mechanisms become entangled. Confirm forced-action for Study 1.
-5. **Regret scale across prior conditions.** Regret is in shared-utility units, but the attainable range differs by belief state (a confident agent has less to gain from any experiment). The manuscript reports raw regret as primary and best-minus-worst-normalized regret as a sensitivity. Should the normalized version be primary instead?
-6. **Restriction threshold λ for the stopping margin.** The proposal says the headline closure estimate is restricted to states where L_stop exceeds a prespecified threshold "under both priors". The manuscript reads this as: each condition's margin is computed under its own belief, and λ is chosen from oracle simulations so both conditions have adequate support. Confirm, and fix λ (or the rule for choosing it) before the freeze.
-7. **Which oracle is primary for the headline numbers.** Both the reported-belief oracle and the trajectory oracle are run. The manuscript marks the reported-belief oracle as primary in the estimand definitions. If the PI prefers the trajectory oracle (which penalizes belief drift as well as action error), the primary estimand and the power simulation change.
-8. **Thresholds that define world types.** π_min (how strong the false prior must be), θ (posterior level below which H' counts as falsified), φ_min (minimum falsification probability), g_min (value margin), and the likelihood-ratio cap for "moderate evidence" all need numbers before Gate 1. The manuscript says they come from oracle simulations; it does not choose them.
+7. **Horizon-aware vs. myopic value in the opposition study.** The manuscript defines the best experiment with the finite-horizon Q-value under the shared objective (Eq. 4), so both studies use one decision problem. The proposal's "rationally best experiment" is also consistent with one-step EIG. The two can disagree on which worlds count as opposition worlds. Which is primary?
+8. **STOP in the opposition action set.** The manuscript assumes forced action in Study 1 (matching "forced to keep going") and reserves stopping for Study 2. If STOP is allowed, an avoided falsifier can be replaced by stopping and the two mechanisms entangle. Confirm.
+9. **Regret scale.** Raw regret is primary; regret normalized by the oracle's best-minus-worst gap is a sensitivity. Should normalized be primary, given confident agents have less to gain from any experiment?
+10. **Margin threshold λ.** Read as: each condition's margin under its own belief, λ chosen from oracle simulations so both conditions have support. Confirm, and fix λ or the rule before the freeze.
+11. **Primary oracle.** Reported-belief oracle is marked primary. If the trajectory oracle should be primary instead, the headline estimand and the power simulation change.
+12. **World-type thresholds** π_min, θ, φ_min, g_min, and the likelihood-ratio cap: numbers needed before Gate 1.
 
 ## C. Protocol decisions
 
-9. **Number of competence-gate revision rounds (k).** The proposal leaves k unspecified. It bounds researcher degrees of freedom, so it should be fixed and logged before any frontier-model run.
-10. **Primary cost/utility regime.** The stopping oracle needs one primary (c, S, T) triple disclosed to the model, plus the prespecified sweep grid. The scoring rule S is described as "proper" but not chosen; the manuscript notes that the log score makes one-step continuation value equal EIG minus cost, which is a reason to prefer it, but this is a choice for the PI.
-11. **Misleading-pilot selection rule.** Pilot samples are selected so that a neutral-prior Bayesian posterior "legitimately favors H'". The selection threshold and whether the pilot experiment is fixed or oracle-chosen are open.
-12. **Which model families are in scope for the confirmatory runs**, given the API budget, and whether Gemma 3 12B (which failed to show a same-prior control in Study 1) stays in the final matrix.
+13. **Number of competence-gate revision rounds.** The manuscript says "a small fixed number, set before the first run". Fix the number.
+14. **Primary cost/utility regime (c, S, T)** and the sweep grid. The log score makes one-step continuation value equal EIG minus cost (Eq. 5), which is a reason to prefer it, but the choice is the PI's.
+15. **Misleading-pilot selection rule.** Threshold for "legitimately favors H′", and whether the pilot experiment is fixed or oracle-chosen.
+16. **Model families in the confirmatory matrix**, given budget, and whether Gemma 3 12B stays.
 
 ## D. Positioning
 
-13. **Novelty statement.** The related-work search found no paper combining a planted false prior, a same-belief exact Bayesian policy, and outcomes on experiment choice and stopping. The closest are Chen et al. 2026 (exact Bayes seeded with the model's own elicited prior, passive updating only), Yamin et al. 2026 (belief-vs-action consistency, one-shot decisions), Jhaveri et al. 2026 (Wason 2-4-6 confirmation bias in LLM test selection, heuristic metric, no manipulated prior), and BED-LLM (EIG policy from LLM beliefs used as a method). The manuscript claims only "we did not find" and "our central comparison is". Is the PI comfortable with that, and are there papers from the group's own reading list that should be added?
+17. **Novelty statement.** The manuscript says only that we did not find work combining a planted false prior, a same-belief exact Bayesian policy, and outcomes on experiment choice and stopping, and names the nearest neighbors (Chen et al. 2026; Yamin et al. 2026; Jhaveri et al. 2026; BED-LLM). Are there papers from the group's own reading that should be added before this goes out?

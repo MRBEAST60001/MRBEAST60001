@@ -1,0 +1,16 @@
+% Pipeline: reported prior -> same-prior oracle -> {opposition, stopping} -> excess policy deviation.
+\begin{tikzpicture}[
+  box/.style={draw, thin, rectangle, align=center, font=\small, inner xsep=5pt, inner ysep=4pt},
+  arr/.style={-{Latex[length=1.8mm]}, thin},
+]
+\node[box] (prior) {reported prior $q_0^{\mathrm{rep}}$\\ elicited, not instructed};
+\node[box, right=5mm of prior] (oracle) {same-prior oracle\\ exact Bayes, finite-horizon DP\\ shared $c$, $T$, $U_{\mathrm{stop}}$};
+\node[box, anchor=west, text width=3.55cm] (opp) at ($(oracle.east)+(5mm,7.5mm)$) {opposition worlds\\ regret $R_t$ of the chosen experiment};
+\node[box, anchor=west, text width=3.55cm] (stop) at ($(oracle.east)+(5mm,-7.5mm)$) {endogenous stopping\\ $\mathrm{STOP}$ where the oracle continues};
+\node[box, anchor=west] (dev) at ($(opp.east)+(5mm,-7.5mm)$) {excess deviation\\ false minus neutral};
+\draw[arr] (prior) -- (oracle);
+\draw[arr] (oracle.east) -- ++(2.5mm,0) |- (opp.west);
+\draw[arr] (oracle.east) -- ++(2.5mm,0) |- (stop.west);
+\draw[arr] (opp.east) -- ++(2.5mm,0) |- (dev.west);
+\draw[arr] (stop.east) -- ++(2.5mm,0) |- (dev.west);
+\end{tikzpicture}

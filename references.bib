@@ -1,11 +1,6 @@
-% ---------------------------------------------------------------------------
 % references.bib -- The Stubborn Prior
-% Every entry was checked against an arXiv abstract page, publisher record,
-% or proceedings listing on 2026-09-05. Entries marked "note = {... venue
-% unverified}" have a field that could not be confirmed from a primary page.
-% ---------------------------------------------------------------------------
-
-% ---------- Bayesian experimental design, value of information, stopping ----
+% Every entry was checked against an arXiv abstract page, publisher/Crossref record, or proceedings
+% listing on 2026-09-05, including that the claim attributed to it in main.tex appears in the paper.
 
 @article{lindley1956measure,
   title   = {On a Measure of the Information Provided by an Experiment},
@@ -66,13 +61,6 @@
   publisher = {McGraw-Hill}, address = {New York}, year = {1970}
 }
 
-@book{raiffa1961applied,
-  title     = {Applied Statistical Decision Theory},
-  author    = {Raiffa, Howard and Schlaifer, Robert},
-  publisher = {Division of Research, Graduate School of Business Administration, Harvard University},
-  address   = {Boston}, year = {1961}
-}
-
 @article{gneiting2007strictly,
   title   = {Strictly Proper Scoring Rules, Prediction, and Estimation},
   author  = {Gneiting, Tilmann and Raftery, Adrian E.},
@@ -99,37 +87,6 @@
   note      = {arXiv:2510.20886}
 }
 
-@inproceedings{hu2024uncertainty,
-  title     = {Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in Large Language Models},
-  author    = {Hu, Zhiyuan and Liu, Chumin and Feng, Xidong and Zhao, Yilun and Ng, See-Kiong and Luu, Anh Tuan and He, Junxian and Koh, Pang Wei and Hooi, Bryan},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2024},
-  note      = {arXiv:2402.03271}
-}
-
-@inproceedings{piriyakulkij2024doing,
-  title     = {Doing Experiments and Revising Rules with Natural Language and Probabilistic Reasoning},
-  author    = {Piriyakulkij, Wasu Top and Langenfeld, Cassidy and Le, Tuan Anh and Ellis, Kevin},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2024},
-  note      = {arXiv:2402.06025}
-}
-
-@inproceedings{mazzaccara2024learning,
-  title     = {Learning to Ask Informative Questions: Enhancing {LLMs} with Preference Optimization and Expected Information Gain},
-  author    = {Mazzaccara, Davide and Testoni, Alberto and Bernardi, Raffaella},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
-  pages     = {5064--5074}, year = {2024},
-  doi       = {10.18653/v1/2024.findings-emnlp.291}
-}
-
-@article{ke2024foundation,
-  title   = {Can Foundation Models Actively Gather Information in Interactive Environments to Test Hypotheses?},
-  author  = {Ke, Nan Rosemary and Sawyer, Danny P. and Soyer, Hubert and Engelcke, Martin and Reichert, David P. and Hudson, Drew A. and Reid, John and Lerchner, Alexander and Rezende, Danilo Jimenez and Lillicrap, Timothy P. and Mozer, Michael and Wang, Jane X.},
-  journal = {arXiv preprint arXiv:2412.06438},
-  year    = {2024}
-}
-
 @inproceedings{gandhi2025boxinggym,
   title     = {{BoxingGym}: Benchmarking Progress in Automated Experimental Design and Model Discovery},
   author    = {Gandhi, Kanishk and Li, Michael Y. and Goodyear, Lyle and Bhatia, Agam and Li, Louise and Bhaskar, Aditi and Zaman, Mohammed and Goodman, Noah D.},
@@ -147,64 +104,6 @@
   year      = {2025},
   note      = {arXiv:2509.21403}
 }
-
-@inproceedings{liu2024llambo,
-  title     = {Large Language Models to Enhance {Bayesian} Optimization},
-  author    = {Liu, Tennison and Astorga, Nicol{\'a}s and Seedat, Nabeel and van der Schaar, Mihaela},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2024},
-  note      = {arXiv:2402.03921}
-}
-
-@inproceedings{kristiadi2024sober,
-  title     = {A Sober Look at {LLMs} for Material Discovery: Are They Actually Good for {Bayesian} Optimization Over Molecules?},
-  author    = {Kristiadi, Agustinus and Strieth-Kalthoff, Felix and Skreta, Marta and Poupart, Pascal and Aspuru-Guzik, Al{\'a}n and Pleiss, Geoff},
-  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
-  year      = {2024},
-  note      = {arXiv:2402.05015}
-}
-
-@article{rankovic2026uncertainty,
-  title   = {Large Language Models as Uncertainty-Calibrated Optimizers for Experimental Discovery},
-  author  = {Rankovi{\'c}, Bojana and Griffiths, Ryan-Rhys and Schwaller, Philippe},
-  journal = {Nature Machine Intelligence},
-  year    = {2026},
-  doi     = {10.1038/s42256-026-01283-z},
-  note    = {arXiv:2504.06265; volume and pages unverified}
-}
-
-@inproceedings{malik2026made,
-  title     = {{MADE}: Benchmark Environments for Closed-Loop Materials Discovery},
-  author    = {Malik, Shreshth A. and Doherty, Tiarnan and Tigas, Panagiotis and Razzak, Muhammed and Roberts, Stephen J. and Walsh, Aron and Gal, Yarin},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
-  year      = {2026},
-  note      = {arXiv:2601.20996}
-}
-
-@article{murphy2026mda,
-  title   = {Model Discovery Agent: {LLM}-Assisted {Bayesian} Experiment Design for Data-Efficient Discovery of Mechanistic World Models},
-  author  = {Murphy, Kevin},
-  journal = {arXiv preprint arXiv:2608.09696},
-  year    = {2026}
-}
-
-@article{kabra2026autoscilab,
-  title   = {{LLM-AutoSciLab}: Closed-Loop Scientific Discovery via Active Experimentation with {LLMs}},
-  author  = {Kabra, Sanchit and Abhyankar, Nikhil and Desai, Saaketh and Iyer, Prasad and Reddy, Chandan K.},
-  journal = {arXiv preprint arXiv:2605.24043},
-  year    = {2026}
-}
-
-@article{cisse2026closedloop,
-  title   = {Can We Automate Scientific Reasoning in Closed-Loop Experiments Using Large Language Models?},
-  author  = {Ciss{\'e}, Abdoulatif and Cooper, Max E. and Zhu, Mengjia and Evangelopoulos, Xenophon and Cooper, Andrew I.},
-  journal = {Digital Discovery},
-  volume  = {5}, number = {3}, pages = {1132--1160}, year = {2026},
-  doi     = {10.1039/D5DD00520E},
-  note    = {volume and pages from publisher-indexed listing; primary page not loaded}
-}
-
-% ---------- Autonomous AI scientists -------------------------------------
 
 @article{lu2024aiscientist,
   title   = {The {AI} Scientist: Towards Fully Automated Open-Ended Scientific Discovery},
@@ -228,34 +127,10 @@
   doi     = {10.1038/s41586-023-06792-0}
 }
 
-@article{gottweis2026coscientist,
-  title   = {Accelerating Scientific Discovery with {Co-Scientist}},
-  author  = {Gottweis, Juraj and Weng, Wei-Hung and Daryin, Alexander and Tu, Tao and Sirkovic, Petar and Myaskovsky, Artiom and others},
-  journal = {Nature},
-  volume  = {655}, number = {8122}, pages = {487--496}, year = {2026},
-  doi     = {10.1038/s41586-026-10644-y},
-  note    = {Preprint: arXiv:2502.18864 (2025), titled ``Towards an {AI} co-scientist''}
-}
-
-@article{swanson2025virtuallab,
-  title   = {The Virtual Lab of {AI} Agents Designs New {SARS-CoV-2} Nanobodies},
-  author  = {Swanson, Kyle and Wu, Wesley and Bulaong, Nash L. and Pak, John E. and Zou, James},
-  journal = {Nature},
-  volume  = {646}, number = {8085}, pages = {716--723}, year = {2025},
-  doi     = {10.1038/s41586-025-09442-9}
-}
-
 @article{riosgarcia2026aiscientists,
   title   = {{AI} Scientists Produce Results Without Reasoning Scientifically},
   author  = {R{\'\i}os-Garc{\'\i}a, Marti{\~n}o and Alampara, Nawaf and Gupta, Chandan and Mandal, Indrajeet and Mannan, Sajid and Aghajani, Ali Asghar and Krishnan, N. M. Anoop and Jablonka, Kevin Maik},
   journal = {arXiv preprint arXiv:2604.18805},
-  year    = {2026}
-}
-
-@article{bisht2026notbuilt,
-  title   = {Agentic {AI} Scientists Are Not Built for Autonomous Scientific Discovery},
-  author  = {Bisht, Harshit and Kumar, Vinay and Jablonka, Kevin Maik and Mausam and Krishnan, N. M. Anoop},
-  journal = {arXiv preprint arXiv:2605.08956},
   year    = {2026}
 }
 
@@ -267,69 +142,6 @@
   note      = {arXiv:2507.00310}
 }
 
-@article{agarwal2026evidence,
-  title   = {Evidence-Informed {LLM} Beliefs for Continual Scientific Discovery},
-  author  = {Agarwal, Dhruv and Adamson, Reece and McCallum, Andrew and Clark, Peter and Sabharwal, Ashish and Majumder, Bodhisattwa Prasad},
-  journal = {arXiv preprint arXiv:2606.29182},
-  year    = {2026}
-}
-
-@inproceedings{shah2026whenstop,
-  title     = {When Should an {AI} Scientist Stop? {Verifiable} Experiment Steering and Refusal for Autonomous Discovery},
-  author    = {Shah, Neel Tushar and Kartik, Manglam},
-  booktitle = {ICML 2026 Workshop on AI for Science},
-  year      = {2026},
-  note      = {arXiv:2606.07576}
-}
-
-% ---------- Scientific-agent benchmarks ----------------------------------
-
-@article{wang2026frontierscience,
-  title   = {{FrontierScience}: Evaluating {AI}'s Ability to Perform Expert-Level Scientific Tasks},
-  author  = {Wang, Miles and Lin, Robi and Hu, Kat and Jiao, Joy and Chowdhury, Neil and Chang, Ethan and Patwardhan, Tejal},
-  journal = {arXiv preprint arXiv:2601.21165},
-  year    = {2026}
-}
-
-@article{liu2026lifescibench,
-  title   = {{LifeSciBench}: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences},
-  author  = {Liu, Amelia and Ho, Andrew and Droste, Anne Marie and Martin, David and Wong, Edmund and others},
-  journal = {bioRxiv},
-  year    = {2026},
-  doi     = {10.64898/2026.08.13.744657}
-}
-
-@article{xu2025sgibench,
-  title   = {Probing Scientific General Intelligence of {LLMs} with Scientist-Aligned Workflows},
-  author  = {Xu, Wanghan and Zhou, Yuhao and Zhou, Yifan and Cao, Qinglong and Li, Shuo and Bu, Jia and Liu, Bo and Chen, Yixin and He, Xuming and Zhao, Xiangyu and others},
-  journal = {arXiv preprint arXiv:2512.16969},
-  year    = {2025},
-  note    = {SGI-Bench}
-}
-
-@article{wiemann2026discoverphysics,
-  title   = {{DiscoverPhysics}: Benchmarking {LLMs} for Out-of-the-Box Scientific Thinking},
-  author  = {Wiemann, Matt L. and Smith, Lindsay M. and Melchior, Peter and Mishra-Sharma, Siddharth and Wilson, Andrew Gordon and Izmailov, Pavel and Cuesta-L{\'a}zaro, Carolina},
-  journal = {arXiv preprint arXiv:2605.26087},
-  year    = {2026}
-}
-
-@article{liu2026scope,
-  title   = {Can {LLM} Design High-Quality Experiments? {A} Comprehensive and Systematic Benchmark on Autonomous Experimental Design},
-  author  = {Liu, Zejun and Wu, Jian and Peng, Ru and Ji, Yuliang and Li, Dongyuan and Jiang, Renhe and Zhang, Yue},
-  journal = {arXiv preprint arXiv:2608.03501},
-  year    = {2026},
-  note    = {SCOPE}
-}
-
-@inproceedings{chen2025scienceagentbench,
-  title     = {{ScienceAgentBench}: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery},
-  author    = {Chen, Ziru and Chen, Shijie and Ning, Yuting and Zhang, Qianheng and Wang, Boshi and Yu, Botao and Li, Yifei and Liao, Zeyi and Wei, Chen and Lu, Zitong and Dey, Vishal and Xue, Mingyi and Baker, Frazier N. and Burns, Benjamin and Adu-Ampratwum, Daniel and Huang, Xuhui and Ning, Xia and Gao, Song and Su, Yu and Sun, Huan},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2025},
-  note      = {arXiv:2410.05080}
-}
-
 @inproceedings{jansen2024discoveryworld,
   title     = {{DiscoveryWorld}: A Virtual Environment for Developing and Evaluating Automated Scientific Discovery Agents},
   author    = {Jansen, Peter and C{\^o}t{\'e}, Marc-Alexandre and Khot, Tushar and Bransom, Erin and Dalvi Mishra, Bhavana and Majumder, Bodhisattwa Prasad and Tafjord, Oyvind and Clark, Peter},
@@ -338,38 +150,15 @@
   note      = {arXiv:2406.06769}
 }
 
-@inproceedings{majumder2025discoverybench,
-  title     = {{DiscoveryBench}: Towards Data-Driven Discovery with Large Language Models},
-  author    = {Majumder, Bodhisattwa Prasad and Surana, Harshit and Agarwal, Dhruv and Dalvi Mishra, Bhavana and Meena, Abhijeetsingh and Prakhar, Aryan and Vora, Tirth and Khot, Tushar and Sabharwal, Ashish and Clark, Peter},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2025},
-  note      = {arXiv:2407.01725}
-}
-
 @inproceedings{chen2025physgym,
   title     = {{PhysGym}: Benchmarking {LLMs} in Interactive Physics Discovery with Controlled Priors},
   author    = {Chen, Yimeng and Pi{\k{e}}kos, Piotr and Ostaszewski, Mateusz and Laakom, Firas and Schmidhuber, J{\"u}rgen},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track},
   year      = {2025},
   note      = {arXiv:2507.15550}
 }
 
 % ---------- Belief elicitation, calibration, stated vs revealed ---------
-
-@article{kadavath2022language,
-  title   = {Language Models (Mostly) Know What They Know},
-  author  = {Kadavath, Saurav and Conerly, Tom and Askell, Amanda and Henighan, Tom and Drain, Dawn and Perez, Ethan and Schiefer, Nicholas and Hatfield-Dodds, Zac and DasSarma, Nova and Tran-Johnson, Eli and others},
-  journal = {arXiv preprint arXiv:2207.05221},
-  year    = {2022}
-}
-
-@article{lin2022teaching,
-  title   = {Teaching Models to Express Their Uncertainty in Words},
-  author  = {Lin, Stephanie and Hilton, Jacob and Evans, Owain},
-  journal = {Transactions on Machine Learning Research},
-  year    = {2022},
-  note    = {arXiv:2205.14334}
-}
 
 @inproceedings{tian2023just,
   title     = {Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback},
@@ -394,62 +183,11 @@
   year    = {2026}
 }
 
-@article{yamin2026revealed,
-  title   = {Can Revealed Preferences Clarify {LLM} Alignment and Steering?},
-  author  = {Yamin, Khurram and Tang, Jingjing and Horvitz, Eric and Wilder, Bryan},
-  journal = {arXiv preprint arXiv:2605.08556},
-  year    = {2026}
-}
-
 @article{pal2025knowing,
   title   = {Knowing What You Know Is Not Enough: Large Language Model Confidences Don't Align With Their Actions},
   author  = {Pal, Arka and Kitanovski, Teo and Liang, Arthur and Potti, Akilesh and Goldblum, Micah},
   journal = {arXiv preprint arXiv:2511.13240},
   year    = {2025}
-}
-
-@article{wang2026faithful,
-  title   = {Are {LLM} Decisions Faithful to Verbal Confidence?},
-  author  = {Wang, Jiawei and Zhou, Yanfei and Devic, Siddartha and Fu, Deqing},
-  journal = {arXiv preprint arXiv:2601.07767},
-  year    = {2026}
-}
-
-@article{mondal2026implicit,
-  title   = {Implicit Probabilistic Reasoning Does Not Reflect Explicit Answers in Large Language Models},
-  author  = {Mondal, Manuel and Dolamic, Ljiljana and Bovet, G{\'e}r{\^o}me and Cudr{\'e}-Mauroux, Philippe and Audiffren, Julien},
-  journal = {Transactions on Machine Learning Research},
-  year    = {2026},
-  note    = {arXiv:2406.14986}
-}
-
-@article{sobotka2026why,
-  title   = {Why Do {LLMs} Struggle in Strategic Play? {Broken} Links Between Observations, Beliefs, and Actions},
-  author  = {Sobotka, Jan and Karabag, Mustafa O. and Topcu, Ufuk},
-  journal = {arXiv preprint arXiv:2605.00226},
-  year    = {2026}
-}
-
-@article{kumaran2026causal,
-  title   = {Causal Evidence that Language Models Use Confidence to Drive Behavior},
-  author  = {Kumaran, Dharshan and Daw, Nathaniel and Osindero, Simon and Veli{\v{c}}kovi{\'c}, Petar and Patraucean, Viorica},
-  journal = {arXiv preprint arXiv:2603.22161},
-  year    = {2026}
-}
-
-@inproceedings{zhu2024incoherent,
-  title     = {Incoherent Probability Judgments in Large Language Models},
-  author    = {Zhu, Jian-Qiao and Griffiths, Thomas L.},
-  booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
-  year      = {2024},
-  note      = {arXiv:2401.16646}
-}
-
-@article{zhu2024eliciting,
-  title   = {Eliciting the Priors of Large Language Models Using Iterated In-Context Learning},
-  author  = {Zhu, Jian-Qiao and Griffiths, Thomas L.},
-  journal = {arXiv preprint arXiv:2406.01860},
-  year    = {2024}
 }
 
 @inproceedings{sclar2024quantifying,
@@ -460,53 +198,12 @@
   note      = {arXiv:2310.11324}
 }
 
-@article{mizrahi2024state,
-  title   = {State of What Art? {A} Call for Multi-Prompt {LLM} Evaluation},
-  author  = {Mizrahi, Moran and Kaplan, Guy and Malkin, Dan and Dror, Rotem and Shahaf, Dafna and Stanovsky, Gabriel},
-  journal = {Transactions of the Association for Computational Linguistics},
-  volume  = {12}, year = {2024},
-  note    = {arXiv:2401.00595}
-}
-
-@article{xia2026calibration,
-  title   = {Calibration Is Not Enough: Evaluating Confidence Estimation Under Language Variations},
-  author  = {Xia, Yuxi and Ulmer, Dennis and Blevins, Terra and Liu, Yihong and Sch{\"u}tze, Hinrich and Roth, Benjamin},
-  journal = {arXiv preprint arXiv:2601.08064},
-  year    = {2026}
-}
-
-% ---------- LLMs as Bayesian updaters ------------------------------------
-
-@inproceedings{xie2022explanation,
-  title     = {An Explanation of In-Context Learning as Implicit {Bayesian} Inference},
-  author    = {Xie, Sang Michael and Raghunathan, Aditi and Liang, Percy and Ma, Tengyu},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2022},
-  note      = {arXiv:2111.02080}
-}
-
-@inproceedings{falck2024icl,
-  title     = {Is In-Context Learning in Large Language Models {Bayesian}? {A} Martingale Perspective},
-  author    = {Falck, Fabian and Wang, Ziyu and Holmes, Chris},
-  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
-  year      = {2024},
-  note      = {arXiv:2406.00793}
-}
-
 @inproceedings{gupta2025coinflips,
   title     = {Enough Coin Flips Can Make {LLMs} Act {Bayesian}},
   author    = {Gupta, Ritwik and Corona, Rodolfo and Ge, Jiaxin and Wang, Eric and Klein, Dan and Darrell, Trevor and Chan, David M.},
   booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)},
   year      = {2025},
   note      = {arXiv:2503.04722}
-}
-
-@article{qiu2025bayesian,
-  title   = {{Bayesian} Teaching Enables Probabilistic Reasoning in Large Language Models},
-  author  = {Qiu, Linlu and Sha, Fei and Allen, Kelsey and Kim, Yoon and Linzen, Tal and van Steenkiste, Sjoerd},
-  journal = {Nature Communications},
-  year    = {2025},
-  note    = {arXiv:2503.17523; volume and pages unverified}
 }
 
 @article{chen2026notbayesian,
@@ -516,51 +213,12 @@
   year    = {2026}
 }
 
-@article{samanta2026bayesbench,
-  title   = {{BayesBench}: Evaluating {LLM} Belief Trajectories Under Multi-Turn Evidence Accumulation},
-  author  = {Samanta, Ankur and Magesh, Akshayaa and Lancewicki, Tal and Jain, Ayush and Yu, Youliang and Sajda, Paul and Hassani, Kaveh and Modi, Aditya and Jiang, Daniel R. and Efroni, Yonathan},
-  journal = {arXiv preprint arXiv:2606.30850},
-  year    = {2026}
-}
-
-@inproceedings{he2025martingale,
-  title     = {Martingale Score: An Unsupervised Metric for {Bayesian} Rationality in {LLM} Reasoning},
-  author    = {He, Zhonghao and Qiu, Tianyi and Shirado, Hirokazu and Sap, Maarten},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2025},
-  note      = {arXiv:2512.02914}
-}
-
-@article{schubert2024asymmetric,
-  title   = {In-Context Learning Agents Are Asymmetric Belief Updaters},
-  author  = {Schubert, Johannes A. and Jagadish, Akshay K. and Binz, Marcel and Schulz, Eric},
-  journal = {arXiv preprint arXiv:2402.03969},
-  year    = {2024}
-}
-
-% ---------- Sycophancy, persistence, commitment ---------------------------
-
-@inproceedings{perez2023discovering,
-  title     = {Discovering Language Model Behaviors with Model-Written Evaluations},
-  author    = {Perez, Ethan and Ringer, Sam and Luko{\v{s}}i{\=u}t{\.e}, Kamil{\.e} and Nguyen, Karina and Chen, Edwin and others},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL 2023},
-  pages     = {13387--13434}, year = {2023},
-  note      = {arXiv:2212.09251}
-}
-
 @inproceedings{sharma2024towards,
   title     = {Towards Understanding Sycophancy in Language Models},
   author    = {Sharma, Mrinank and Tong, Meg and Korbak, Tomasz and Duvenaud, David and others},
   booktitle = {International Conference on Learning Representations (ICLR)},
   year      = {2024},
   note      = {arXiv:2310.13548}
-}
-
-@article{wei2023simple,
-  title   = {Simple Synthetic Data Reduces Sycophancy in Large Language Models},
-  author  = {Wei, Jerry and Huang, Da and Lu, Yifeng and Zhou, Denny and Le, Quoc V.},
-  journal = {arXiv preprint arXiv:2308.03958},
-  year    = {2023}
 }
 
 @article{atwell2025basil,
@@ -585,75 +243,10 @@
   note      = {arXiv:2305.13300}
 }
 
-@inproceedings{wan2024evidence,
-  title     = {What Evidence Do Language Models Find Convincing?},
-  author    = {Wan, Alexander and Wallace, Eric and Klein, Dan},
-  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  pages     = {7468--7484}, year = {2024},
-  note      = {arXiv:2402.11782}
-}
-
-@inproceedings{wang2023defend,
-  title     = {Can {ChatGPT} Defend Its Belief in Truth? {Evaluating} {LLM} Reasoning via Debate},
-  author    = {Wang, Boshi and Yue, Xiang and Sun, Huan},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2023},
-  pages     = {11865--11881}, year = {2023},
-  note      = {arXiv:2305.13160}
-}
-
-@inproceedings{huang2024cannot,
-  title     = {Large Language Models Cannot Self-Correct Reasoning Yet},
-  author    = {Huang, Jie and Chen, Xinyun and Mishra, Swaroop and Zheng, Huaixiu Steven and Yu, Adams Wei and Song, Xinying and Zhou, Denny},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2024},
-  note      = {arXiv:2310.01798}
-}
-
-@inproceedings{xie2024askagain,
-  title     = {Ask Again, Then Fail: Large Language Models' Vacillations in Judgment},
-  author    = {Xie, Qiming and Wang, Zengzhi and Feng, Yi and Xia, Rui},
-  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  year      = {2024},
-  note      = {arXiv:2310.02174}
-}
-
-@article{prasad2025debate,
-  title   = {When Two {LLMs} Debate, Both Think They'll Win},
-  author  = {Prasad, Pradyumna Shyama and Nguyen, Minh Nhat},
-  journal = {arXiv preprint arXiv:2505.19184},
-  year    = {2025}
-}
-
-% ---------- Cognitive biases and confirmation bias in LLMs ---------------
-
-@inproceedings{echterhoff2024cognitive,
-  title     = {Cognitive Bias in Decision-Making with {LLMs}},
-  author    = {Echterhoff, Jessica Maria and Liu, Yao and Alessa, Abeer and McAuley, Julian and He, Zexue},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
-  pages     = {12640--12653}, year = {2024},
-  note      = {arXiv:2403.00811}
-}
-
-@article{macmillanscott2024irrationality,
-  title   = {({Ir})rationality and Cognitive Biases in Large Language Models},
-  author  = {Macmillan-Scott, Olivia and Musolesi, Mirco},
-  journal = {Royal Society Open Science},
-  volume  = {11}, number = {6}, pages = {240255}, year = {2024},
-  doi     = {10.1098/rsos.240255}
-}
-
-@article{binz2023cognitive,
-  title   = {Using Cognitive Psychology to Understand {GPT-3}},
-  author  = {Binz, Marcel and Schulz, Eric},
-  journal = {Proceedings of the National Academy of Sciences},
-  volume  = {120}, number = {6}, pages = {e2218523120}, year = {2023},
-  doi     = {10.1073/pnas.2218523120}
-}
-
 @inproceedings{jhaveri2026failing,
   title     = {Failing to Falsify: Evaluating and Mitigating Confirmation Bias in Language Models},
   author    = {Jhaveri, Ayush Rajesh and GX-Chen, Anthony and Sucholutsky, Ilia and Choi, Eunsol},
-  booktitle = {ICLR 2026 Workshop ``From Human Cognition to AI Reasoning''},
+  booktitle = {ICLR 2026 Workshop on From Human Cognition to AI Reasoning: Models, Methods, and Applications},
   year      = {2026},
   note      = {arXiv:2604.02485}
 }
@@ -696,18 +289,4 @@
   author  = {Oaksford, Mike and Chater, Nick},
   journal = {Psychological Review},
   volume  = {101}, number = {4}, pages = {608--631}, year = {1994}
-}
-
-@article{lord1979biased,
-  title   = {Biased Assimilation and Attitude Polarization: The Effects of Prior Theories on Subsequently Considered Evidence},
-  author  = {Lord, Charles G. and Ross, Lee and Lepper, Mark R.},
-  journal = {Journal of Personality and Social Psychology},
-  volume  = {37}, number = {11}, pages = {2098--2109}, year = {1979}
-}
-
-@article{kunda1990case,
-  title   = {The Case for Motivated Reasoning},
-  author  = {Kunda, Ziva},
-  journal = {Psychological Bulletin},
-  volume  = {108}, number = {3}, pages = {480--498}, year = {1990}
 }
